@@ -27,7 +27,7 @@ class ProductFilter {
   }
 
   pagination(resPerPage) {
-    const currentPage = Math.max(Number(this.queryString.page) || 1, 1); // Sayfa numarasını kontrol et
+    const currentPage = Math.max(Number(this.queryString.page) || 1, 1); 
     const skip = resPerPage * (currentPage - 1);
     this.query = this.query.limit(resPerPage).skip(skip);
     return this;
