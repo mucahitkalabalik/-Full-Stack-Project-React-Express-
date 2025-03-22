@@ -22,8 +22,3 @@ Bu proje, **React** frontend ve **Express.js** backend içeren bir full-stack we
 - **JWT** 
 - **Bcrypt** 
 - **CORS** 
-
----
-
-## 📂 Project Structure  
-
