@@ -15,20 +15,18 @@ function App() {
     <>
       <Router>
         <Routes>
-          {/* Authentication Routes */}
+
           <Route element={<AuthLayout />}>
             <Route path="/admin/login" element={<Login />} />
             <Route path="/admin/register" element={<Register />} />
           </Route>
 
-          {/* Main Application Routes */}
           <Route element={<MainLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/product/:id" element={<ProductDetail />}></Route>
           </Route>
 
-          {/* Admin Routes (Protected) */}
           <Route element={<AdminLayout />}>
             <Route path="/admin/dashboard" element={<AdminDashboard />} />
           </Route>
